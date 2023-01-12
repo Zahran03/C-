@@ -126,7 +126,9 @@ int main()
     case 4:
       Pembayaran:
       if(totalKeseluruhan<1){
+        cout<<"====================================="<<endl;
         cout<<"Silahkan Mulai order terlebih dahulu"<<endl;
+        cout<<"====================================="<<endl;
         goto Awal;
       } else {
         Keputusan4:
@@ -135,7 +137,10 @@ int main()
         cin>>uang;
         bayar =  uang - totalKeseluruhan ;
         if(uang<totalKeseluruhan){
+          cout<<"========================="<<endl;
           cout<<"Uang anda tidak cukupp"<<endl;
+          cout<<"========================="<<endl;
+          goto Pembayaran;
         } else {
           cout<<"Kembalian anda : "<<bayar<<endl;
         }
@@ -175,7 +180,9 @@ int main()
         cout<<endl;
         cout<<"Terimakasih telah berbelanja di toko kami"<<endl;
       } else if(bayar == 0 && uang == 0){
+         cout<<"====================================="<<endl;
         cout<<"Silahkan order dan bayar dulu yaaa"<<endl;
+         cout<<"====================================="<<endl;
         goto Awal;
       }
       cout<<"Ingin Memilih Menu Lain (y/t)";
