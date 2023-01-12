@@ -80,7 +80,7 @@ int main()
       if(keputusan == "Y" || keputusan =="y"){
         goto Awal;
       } else if(keputusan == "T"||keputusan == "t"){
-        return 0;
+        goto Cari;
       }
       break;
     case 3:
